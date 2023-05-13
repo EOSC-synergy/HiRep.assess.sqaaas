@@ -15,48 +15,48 @@ sqa_criteria:
     repos:
       github.com/claudiopica/HiRep git:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-eggplant-barb.sh
-        container: qc.acc_homey-black-urchin
+        - /usr/bin/env sh .sqa/script.messy-eggplant-squirrel.sh
+        container: qc.acc_breezy-chestnut-toucan
   QC.Doc:
     repos:
       github.com/claudiopica/HiRep find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-white-avocet.sh
-        container: qc.doc_skinny-bronze-grasshopper
+        - /usr/bin/env sh .sqa/script.snazzy-white-neanderthal.sh
+        container: qc.doc_lanky-wisteria-heron
       github.com/claudiopica/HiRep git:
         commands:
-        - /usr/bin/env sh .sqa/script.dorky-mustard-fish.sh
-        container: qc.doc_sloppy-sepia-kingfisher
+        - /usr/bin/env sh .sqa/script.paltry-magenta-sheepdog.sh
+        container: qc.doc_snippy-lemon-rattlesnake
       github.com/claudiopica/HiRep markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-brass-zonkey.sh
-        container: qc.doc_goopy-zucchini-barracuda
+        - /usr/bin/env sh .sqa/script.geeky-cobalt-eel.sh
+        container: qc.doc_hasty-goldenrod-macaque
   QC.Lic:
     repos:
       github.com/claudiopica/HiRep licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-lavender-paradise.sh
-        container: qc.lic_squirrely-brass-chicken
+        - /usr/bin/env sh .sqa/script.homely-red-dalmatian.sh
+        container: qc.lic_breezy-alizarin-zorse
   QC.Sec:
     repos:
       github.com/claudiopica/HiRep bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-goldenrod-lynx.sh
-        container: qc.sec_pokey-burgundy-fossa
+        - /usr/bin/env sh .sqa/script.slaphappy-celadon-capuchin.sh
+        container: qc.sec_muggy-saffron-emu
   QC.Sty:
     repos:
       github.com/claudiopica/HiRep flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.woozy-goldenrod-sponge.sh
-        container: qc.sty_woolly-cinnabar-wolfhound
+        - /usr/bin/env sh .sqa/script.lumpy-red-jellyfish.sh
+        container: qc.sty_ready-charcoal-spitz
       github.com/claudiopica/HiRep hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.tasty-cyan-macaw.sh
-        container: qc.sty_flaky-russet-newt
+        - /usr/bin/env sh .sqa/script.smelly-lilac-tetra.sh
+        container: qc.sty_nippy-myrtle-neanderthal
   QC.Ver:
     repos:
       github.com/claudiopica/HiRep get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-heliotrope-heron.sh
-        container: qc.ver_wheezy-goldenrod-booby
+        - /usr/bin/env sh .sqa/script.baggy-green-caiman.sh
+        container: qc.ver_zippy-dandelion-frise
 timeout: 5400
