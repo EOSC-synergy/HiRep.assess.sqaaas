@@ -1,0 +1,62 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: release/1.7.10
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/claudiopica/HiRep:
+      branch: master
+      repo: https://github.com/claudiopica/HiRep
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/claudiopica/HiRep git:
+        commands:
+        - /usr/bin/env sh .sqa/script.woozy-cerise-dachshund.sh
+        container: qc.acc_geeky-amethyst-oriole
+  QC.Doc:
+    repos:
+      github.com/claudiopica/HiRep find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.fuzzy-harlequin-butterfly.sh
+        container: qc.doc_beady-amethyst-chihuahua
+      github.com/claudiopica/HiRep git:
+        commands:
+        - /usr/bin/env sh .sqa/script.fuzzy-asparagus-tortoise.sh
+        container: qc.doc_crabby-ecru-bat
+      github.com/claudiopica/HiRep markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.sloppy-cornflower-markhor.sh
+        container: qc.doc_shabby-cinnabar-beaver
+  QC.Lic:
+    repos:
+      github.com/claudiopica/HiRep licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.pokey-russet-snake.sh
+        container: qc.lic_greasy-cinnamon-scorpion
+  QC.Sec:
+    repos:
+      github.com/claudiopica/HiRep bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.fuzzy-orchid-affenpinscher.sh
+        container: qc.sec_fuzzy-cream-toad
+  QC.Sty:
+    repos:
+      github.com/claudiopica/HiRep flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.sleepy-orange-mouse.sh
+        container: qc.sty_squirrely-plum-snail
+      github.com/claudiopica/HiRep hadolint:
+        commands:
+        - /usr/bin/env sh .sqa/script.trippy-ecru-otter.sh
+        container: qc.sty_lumpy-brown-chamois
+  QC.Ver:
+    repos:
+      github.com/claudiopica/HiRep get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.cozy-chocolate-bison.sh
+        container: qc.ver_blurry-russet-lionfish
+timeout: 5400
