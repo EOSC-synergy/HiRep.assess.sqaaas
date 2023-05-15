@@ -15,48 +15,48 @@ sqa_criteria:
     repos:
       github.com/claudiopica/HiRep git:
         commands:
-        - /usr/bin/env sh .sqa/script.sleazy-viridian-dhole.sh
-        container: qc.acc_beady-celadon-gecko
+        - /usr/bin/env sh .sqa/script.zippy-wisteria-earwig.sh
+        container: qc.acc_zippy-dandelion-sponge
   QC.Doc:
     repos:
       github.com/claudiopica/HiRep find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sleazy-chestnut-mole.sh
-        container: qc.doc_jumpy-cinnabar-caracal
+        - /usr/bin/env sh .sqa/script.shaggy-amber-mongrel.sh
+        container: qc.doc_lousy-seashell-blue
       github.com/claudiopica/HiRep git:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-pear-mastiff.sh
-        container: qc.doc_ready-cornflower-flounder
+        - /usr/bin/env sh .sqa/script.foggy-buff-coral.sh
+        container: qc.doc_stinky-puce-macaw
       github.com/claudiopica/HiRep markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.pretty-buff-devil.sh
-        container: qc.doc_pretty-pear-eel
+        - /usr/bin/env sh .sqa/script.cheeky-celadon-nightingale.sh
+        container: qc.doc_stinky-pink-spaniel
   QC.Lic:
     repos:
       github.com/claudiopica/HiRep licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-cerulean-moose.sh
-        container: qc.lic_paltry-fuchsia-hippopotamus
+        - /usr/bin/env sh .sqa/script.hasty-emerald-schnauzer.sh
+        container: qc.lic_gloppy-saffron-bombay
   QC.Sec:
     repos:
       github.com/claudiopica/HiRep bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.cozy-apricot-meerkat.sh
-        container: qc.sec_messy-mauve-chameleon
+        - /usr/bin/env sh .sqa/script.sloppy-chocolate-setter.sh
+        container: qc.sec_woozy-amber-millipede
   QC.Sty:
     repos:
       github.com/claudiopica/HiRep flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-blue-mau.sh
-        container: qc.sty_paltry-cinnamon-foxhound
+        - /usr/bin/env sh .sqa/script.slimy-cobalt-cockroach.sh
+        container: qc.sty_cheeky-emerald-monkey
       github.com/claudiopica/HiRep hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-goldenrod-ocelot.sh
-        container: qc.sty_muzzy-purple-dalmatian
+        - /usr/bin/env sh .sqa/script.snappy-peach-greyhound.sh
+        container: qc.sty_squeaky-buff-wrasse
   QC.Ver:
     repos:
       github.com/claudiopica/HiRep get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-razzmatazz-okapi.sh
-        container: qc.ver_boozy-xanthic-giraffe
+        - /usr/bin/env sh .sqa/script.sleazy-black-antelope.sh
+        container: qc.ver_nerdy-harlequin-coati
 timeout: 5400
