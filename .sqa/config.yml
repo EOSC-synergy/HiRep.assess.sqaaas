@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.8
+      branch: release/1.7.10
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/claudiopica/HiRep:
       branch: master
@@ -15,48 +15,48 @@ sqa_criteria:
     repos:
       github.com/claudiopica/HiRep git:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-buff-armadillo.sh
-        container: qc.acc_beady-teal-ragdoll
+        - /usr/bin/env sh .sqa/script.homey-olive-llama.sh
+        container: qc.acc_zippy-wheat-ocelot
   QC.Doc:
     repos:
       github.com/claudiopica/HiRep find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-persimmon-rabbit.sh
-        container: qc.doc_slaphappy-wisteria-collie
+        - /usr/bin/env sh .sqa/script.boozy-flax-burmese.sh
+        container: qc.doc_tacky-gamboge-hamster
       github.com/claudiopica/HiRep git:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-olive-cockroach.sh
-        container: qc.doc_grumpy-tomato-woodpecker
+        - /usr/bin/env sh .sqa/script.ugly-myrtle-jellyfish.sh
+        container: qc.doc_clammy-vermilion-kangaroo
       github.com/claudiopica/HiRep markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-tangerine-centipede.sh
-        container: qc.doc_queasy-pink-chamois
+        - /usr/bin/env sh .sqa/script.pasty-cobalt-dunker.sh
+        container: qc.doc_whiny-charcoal-saola
   QC.Lic:
     repos:
       github.com/claudiopica/HiRep licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-rose-dog.sh
-        container: qc.lic_hazy-teal-kudu
+        - /usr/bin/env sh .sqa/script.wimpy-chocolate-rat.sh
+        container: qc.lic_dorky-lavender-bongo
   QC.Sec:
     repos:
       github.com/claudiopica/HiRep bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-tomato-toucan.sh
-        container: qc.sec_grumpy-cardinal-fossa
+        - /usr/bin/env sh .sqa/script.freaky-cinnabar-sheepdog.sh
+        container: qc.sec_foggy-carmine-wildebeest
   QC.Sty:
     repos:
       github.com/claudiopica/HiRep flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.foggy-cyan-llama.sh
-        container: qc.sty_muzzy-firebrick-moose
+        - /usr/bin/env sh .sqa/script.lumpy-pear-grouse.sh
+        container: qc.sty_nippy-ultramarine-buzzard
       github.com/claudiopica/HiRep hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-corn-axolotl.sh
-        container: qc.sty_seedy-azure-heron
+        - /usr/bin/env sh .sqa/script.hilly-maroon-lynx.sh
+        container: qc.sty_bluesy-corn-dugong
   QC.Ver:
     repos:
       github.com/claudiopica/HiRep get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.scummy-pear-chow.sh
-        container: qc.ver_woolly-cyan-duck
+        - /usr/bin/env sh .sqa/script.zippy-lilac-akbash.sh
+        container: qc.ver_droopy-azure-uakari
 timeout: 5400
